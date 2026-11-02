@@ -1,0 +1,21 @@
+{
+  "name": "kathirgrid-renewable-energy-allocation-mongodb",
+  "version": "3.0.0",
+  "private": true,
+  "description": "KathirGrid frontend and Node.js/MongoDB backend",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"npm:dev:frontend\" \"npm:dev:backend\"",
+    "dev:frontend": "live-server frontend --host=127.0.0.1 --port=5501 --no-browser",
+    "dev:backend": "node backend/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.19.1",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2"
+  }
+}
